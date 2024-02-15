@@ -37,6 +37,16 @@ case $ch in
 		echo "Addition is ="$sum;;
 	2)sum=$(echo "$n1-$n2" | bc -l) #Substraction
 		echo "Sub is ="$sum;;
-	3)sum=$(echo "&n1*$n2" | bc -l) #Multiplication
+	3)sum=$(echo "$n1*$n2" | bc -l) #Multiplication
 		echo "Mul is ="$sum;;
-	
+	4)sum=$(echo "$n1/$n2" |bc -l) #Division
+		echo "Dev is ="$sum;;
+	*)echo "Invalid choice"
+esac
+echo "Do you want to continue?"
+read i
+if [$i!="y"]
+then
+	exit
+fi
+done
