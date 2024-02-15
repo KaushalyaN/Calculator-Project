@@ -33,6 +33,8 @@ do
 #Calculator Operations
 #Addition
 case $ch in
-	1)sum=$(echo "$n1+$n2" |bc -l)
+	1)sum=$(echo "$n1+$n2" | bc -l)
 		echo "Addition is ="$sum;;
-		
+	2)sum=$(echo "$n1-$n2" | bc -l)
+		echo"Sub is ="$sum;;
+
