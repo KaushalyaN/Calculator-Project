@@ -31,10 +31,12 @@ do
 	read ch
 #Switch Case to Perform
 #Calculator Operations
-#Addition
-case $ch in
-	1)sum=$(echo "$n1+$n2" | bc -l)
-		echo "Addition is ="$sum;;
-	2)sum=$(echo "$n1-$n2" | bc -l)
-		echo"Sub is ="$sum;;
 
+case $ch in
+	1)sum=$(echo "$n1+$n2" | bc -l) #Addition
+		echo "Addition is ="$sum;;
+	2)sum=$(echo "$n1-$n2" | bc -l) #Substraction
+		echo "Sub is ="$sum;;
+	3)sum=$(echo "&n1*$n2" | bc -l) #Multiplication
+		echo "Mul is ="$sum;;
+	
